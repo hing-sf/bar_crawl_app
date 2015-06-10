@@ -45,14 +45,14 @@
             <%= f.label :email %>
           </div>
           <div>
-            <%= f.email_field :email, autofocus: true %>
+            <%= f.email_field :email, value: "test@test.com", autofocus: true %>
           </div>
           <br>
           <div class="field">
             <%= f.label :password %>
           </div>
           <div>
-            <%= f.password_field :password, autocomplete: "off" %>
+            <%= f.password_field :password, value: "password", autocomplete: "off" %>
           </div>
           <% if devise_mapping.rememberable? -%>
             <div class="field">
